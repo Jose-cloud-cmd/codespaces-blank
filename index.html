@@ -15,7 +15,9 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <a href="#inicio" class="brand-wrap">
-        <div class="brand-icon">PF</div>
+        <div class="brand-icon">
+          <img src="images/logo.png" alt="Logo de PartFinder" height="50"/>
+        </div>
         <div>
           <div class="brand-title">PartFinder</div>
           <div class="brand-sub">Identificación digital de materiales</div>
@@ -24,12 +26,11 @@
 
       <nav class="nav">
         <a href="#problema">Problema</a>
-        <a href="#solucion">Solución</a>
         <a href="#funciones">Funciones</a>
         <a href="#impacto">Impacto</a>
       </nav>
-
       <a href="https://www.appsheet.com/start/45f608f1-63ea-4a04-8dc4-476c8c8b2bec" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Abrir aplicación</a>
+      <a href="docs/reporte_partfinder.pdf" download class="btn btn-primary">Descargar reporte PDF</a>
     </div>
   </header>
 
@@ -39,13 +40,12 @@
       <div class="hero-glow-right"></div>
       <div class="container hero-grid">
         <div>
-          <div class="badge">Proyecto universitario de digitalización industrial con AppSheet + QR</div>
+          <div class="badge">Beta</div>
           <h1>Identifica materiales y componentes en <span class="accent">menos de 10 segundos</span></h1>
-          <p class="lead">PartFinder optimiza la búsqueda de números de parte, características, ubicación y componentes asociados mediante una aplicación móvil accesible, integrada con Google Sheets y códigos QR dinámicos.</p>
+          <p class="lead">PartFinder optimiza la búsqueda de números de parte, características, ubicación y componentes asociados mediante una aplicación móvil accesible, integrada con el ecosistema de <strong>Google Workspace</strong> y códigos QR dinámicos.</p>
 
           <div class="cta-row">
             <a href="https://www.appsheet.com/start/45f608f1-63ea-4a04-8dc4-476c8c8b2bec" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Probar PartFinder</a>
-            <a href="#solucion" class="btn btn-secondary">Conocer solución</a>
           </div>
 
           <div class="stats">
@@ -138,32 +138,7 @@
       </div>
     </section>
 
-    <section id="solucion" class="section section-dark">
-      <div class="container">
-        <div class="eyebrow">Solución</div>
-        <h2 class="section-title">Una aplicación móvil de consulta técnica, visual y accesible</h2>
-        <p class="section-text">La solución fue desarrollada en AppSheet con base de datos en Google Sheets y automatización mediante JavaScript. En su fase inicial, la aplicación se enfoca en consulta de información de productos, imágenes y componentes, no en captura operativa.</p>
 
-        <div class="grid-4">
-          <div class="feature">
-            <h3>App móvil</h3>
-            <p>Diseñada para usarse en teléfonos, tabletas y navegador dentro del entorno de producción.</p>
-          </div>
-          <div class="feature">
-            <h3>Base relacional</h3>
-            <p>Modelo de datos con tablas relacionadas por claves primarias y foráneas para asegurar consistencia y escalabilidad.</p>
-          </div>
-          <div class="feature">
-            <h3>QR dinámico</h3>
-            <p>Cada producto genera un código QR individual para acceso inmediato a su información.</p>
-          </div>
-          <div class="feature">
-            <h3>Información centralizada</h3>
-            <p>Número de parte, ubicación, características, componentes asociados e imágenes en un solo lugar.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="funciones" class="section">
       <div class="container">
@@ -206,6 +181,64 @@
       </div>
     </section>
 
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Ejemplo de Uso de la Aplicación</div>
+    <h2 class="section-title">Flujo de uso de PartFinder</h2>
+    <p class="section-text">
+      Desde la búsqueda del producto hasta la identificación de sus componentes, el proceso es rápido, visual y accesible.
+    </p>
+
+    <div class="timeline">
+
+      <div class="timeline-step">
+        <div class="timeline-number">1</div>
+        <div class="timeline-content">
+          <div class="timeline-image">
+            <img src="images/imagen_detalles.png">
+          </div>
+          <h3>Búsqueda de producto</h3>
+          <p>El usuario consulta el producto mediante tarjetas o búsqueda directa.</p>
+        </div>
+      </div>
+
+      <div class="timeline-step">
+        <div class="timeline-number">2</div>
+        <div class="timeline-content">
+          <div class="timeline-image">
+            <img src="images/imagen_visualizador.png">
+          </div>
+          <h3>Consulta de detalle</h3>
+          <p>Se accede a la información completa del producto.</p>
+        </div>
+      </div>
+
+      <div class="timeline-step">
+        <div class="timeline-number">3</div>
+        <div class="timeline-content">
+          <div class="timeline-image">
+            <img src="images/imagen_mapaproducto.png">
+          </div>
+          <h3>Visualización de componentes</h3>
+          <p>Se identifican piezas directamente sobre la imagen.</p>
+        </div>
+      </div>
+
+      <div class="timeline-step">
+        <div class="timeline-number">4</div>
+        <div class="timeline-content">
+          <div class="timeline-image">
+            <img src="images/imagen_formatoayudavisual.png">
+          </div>
+          <h3>Apoyo visual / QR</h3>
+          <p>Se facilita la identificación del material en planta.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     <section id="impacto" class="section">
       <div class="container">
         <div class="eyebrow">Impacto del proyecto</div>
@@ -234,36 +267,11 @@
       </div>
     </section>
 
-    <section class="cta-block">
-      <div class="container">
-        <div class="cta-wrap">
-          <div class="cta-grid">
-            <div class="cta-copy">
-              <div class="eyebrow" style="color:#ffedd5;">Proyecto PartFinder</div>
-              <h2 class="section-title" style="max-width:700px;">Una solución universitaria con enfoque real en industria</h2>
-              <p>PartFinder demuestra cómo una herramienta low-code puede mejorar la identificación de materiales, acelerar consultas y sentar bases para futuros sistemas de trazabilidad e inventario.</p>
-            </div>
-
-            <div class="cta-panel">
-              <div class="panel-item">
-                <div class="panel-label">Tecnologías</div>
-                <div class="panel-value">AppSheet · Google Sheets · JavaScript · QR</div>
-              </div>
-              <div class="panel-item">
-                <div class="panel-label">Enfoque metodológico</div>
-                <div class="panel-value">PDCA: Plan, Do, Check, Act</div>
-              </div>
-              <a href="https://www.appsheet.com/start/45f608f1-63ea-4a04-8dc4-476c8c8b2bec" target="_blank" rel="noopener noreferrer" class="btn btn-dark" style="width:100%; margin-top:8px;">Entrar a la aplicación</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer>
     <div class="container footer-inner">
-      <div>© 2026 PartFinder. Proyecto universitario de identificación digital de materiales.</div>
+      <div>© 2026 PartFinder. Proyecto Integradora I | Universidad Tecnologica de Jalisco.</div>
       <div class="footer-links">
         <a href="#problema">Problema</a>
         <a href="#funciones">Funciones</a>
